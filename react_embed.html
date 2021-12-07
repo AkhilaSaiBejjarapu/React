@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <link rel="stylesheet" href="./JS_in_html.css">
+</head>
+
+<body>
+    <div class="container" id="root"></div>
+
+    <script type="text/babel">
+        const name = "Akhila Sai";
+        const role = "Frontend Developer";
+        const details = "styling";
+        const elementDetails = <h1 className={details}>By {name}<br />{role}</h1>;
+
+        ReactDOM.render(elementDetails, document.getElementById("root"));
+
+
+    </script>
+
+
+</body>
+
+</html>

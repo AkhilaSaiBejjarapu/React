@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./JS_in_html.css">
+</head>
+
+<body>
+    <div class="container" id="root"></div>
+    <script type="text/javascript">
+        const rootElement = document.getElementById("root");
+        const elements = document.createElement("h1");
+        elements.classList.add("styling");
+        elements.textContent = "JAVASCRIPT IN HTML!!!";
+        rootElement.appendChild(elements);
+    </script>
+</body>
+
+</html>
